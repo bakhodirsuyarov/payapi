@@ -298,6 +298,166 @@ body{
   margin-bottom: 30px;
 }
 
+
+
+
+/* SERVICES */
+
+
+.services-section{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.easy-section{
+  padding-bottom: 80px;
+}
+
+.easy-section__img{
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+
+.easy-section__heading{
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.276923px;
+  color: #36536B;
+}
+
+.easy-section__text{
+  margin: 0;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #6C8294;
+}
+
+.simple-section__img{
+  margin-bottom: 48px;
+}
+
+.simple-section__heading{
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.276923px;
+  color: #36536B;
+}
+
+.simple-section__text{
+  margin: 0;
+  font-size: 15px;
+  line-height: 28px;
+  text-align: center;
+  color: #6C8294;
+}
+
+
+/* STEPS */
+
+.step{
+  padding-bottom: 80px;
+}
+
+
+.step-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.step-item{
+  padding-top: 140px;
+}
+
+.step-item:not(:last-child){
+  margin-bottom: 48px;
+}
+
+.step-title{
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.138462px;
+  color: #36536B;
+}
+
+.step-text{
+  margin: 0;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: #6C8294;
+}
+
+.money-item{
+  position: relative;
+  z-index: 1;
+}
+
+.money-item::before{
+  position: absolute;
+  content: "";
+  width: 106px;
+  height: 106px;
+  background-image: url(../img/money.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 33%;
+  top: 2%;
+
+}
+
+.bank-item{
+  position: relative;
+  z-index: 1;
+}
+
+.bank-item::before{
+  position: absolute;
+  content: "";
+  width: 106px;
+  height: 106px;
+  background-image: url(../img/bank.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 33%;
+  top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.consumer-item{
+  position: relative;
+  z-index: 1;
+}
+
+.consumer-item::before{
+  position: absolute;
+  content: "";
+  width: 106px;
+  height: 106px;
+  background-image: url(../img/consumer.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 33%;
+  top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media only screen and (min-width: 410px) and (max-width: 450px) {
 
   .work-item{
@@ -399,6 +559,23 @@ body{
 
 
 
+  /* STEPS */
+
+
+  .money-item::before{
+    left: 40%;
+  }
+
+  .bank-item::before{
+    left: 40%;
+  }
+
+  .consumer-item::before{
+    left: 40%;
+  }
+
+
+
 
 
 }
@@ -422,18 +599,90 @@ body{
 
   /* WORK */
 
-  .work-list{
-    /* padding-left: 116px;
-    padding-right: 116px; */
-
-
-  }
 
   .work-item{
     margin-right: 62px;
     margin-bottom: 46px;
   }
 
+
+
+  /* SERVICES */
+
+
+  .services-section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .easy-section{
+    padding-bottom: 100px;
+  }
+
+  .easy-section__img{
+    width: 410px;
+    height: 250px;
+    margin-bottom: 48px;
+  }
+
+  .easy-section__content{
+    padding-left: 97px;
+    padding-right: 97px;
+  }
+
+  .easy-section__heading{
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .simple-section__img{
+    width: 363px;
+    height: 320px;
+  }
+
+  .simple-section__heading{
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .simple-section__content{
+    padding-left: 97px;
+    padding-right: 97px;
+  }
+
+
+
+  /* STEPS */
+
+
+  .step-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+  .money-item::before{
+    width: 88px;
+    height: 88px;
+    left: 33%;
+  }
+  .bank-item::before{
+    width: 88px;
+    height: 88px;
+    left: 33%;
+  }
+  .consumer-item::before{
+    width: 88px;
+    height: 88px;
+    left: 33%;
+  }
+
+  .step-item:not(:last-child){
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
 }
 
 @media only screen and (min-width: 825px) {
@@ -558,6 +807,70 @@ body{
     margin-left: 0;
     width: 90px;
   }
+
+
+  /* SERVICES-SECTION */
+
+
+  .services-section{
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .easy-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 180px;
+  }
+
+  .easy-section__content{
+    padding: 0;
+  }
+
+  .easy-section__img{
+    width: 400px;
+    height: 220px;
+    padding: 0;
+    margin-right: 50px;
+  }
+
+  .easy-section__heading{
+    text-align: left;
+  }
+
+  .easy-section__text{
+    text-align: left;
+  }
+
+
+  .simple-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding-left: 80px;
+    padding-right: 100px;
+  }
+
+  .simple-section__content{
+    padding: 0;
+    margin-right: 50px;
+  }
+
+  .simple-section__img{
+    width: 500px;
+    height: 450px;
+  }
+
+  .simple-section__heading{
+    text-align: left;
+  }
+
+  .simple-section__text{
+    text-align: left;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -573,6 +886,70 @@ body{
     margin-right: 470px;
   }
 
+
+
+
+  /* SERVICES */
+
+
+  .easy-section{
+    padding-left: 140px;
+    padding-right: 230px;
+  }
+
+  .easy-section__img{
+    width: 445px;
+    height: 284px;
+    margin-right: 125px;
+  }
+
+  .simple-section{
+    padding-left: 140px;
+    padding-right: 145px;
+  }
+
+  .simple-section__img{
+    width: 565px;
+    height: 500px;
+  }
+
+  .simple-section__content{
+    margin-right: 95px;
+  }
+
+
+
+  /* STEPS */
+
+
+  .step-list{
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
+  .step-item:not(:last-child){
+    margin-right: 30px;
+
+  }
+
+
+  .money-item::before{
+    width: 106px;
+    height: 106px;
+    left: 33%;
+  }
+
+  .bank-item::before{
+    width: 106px;
+    height: 106px;
+    left: 33%;
+  }
+
+  .consumer-item::before{
+    width: 106px;
+    height: 106px;
+    left: 33%;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
