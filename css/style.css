@@ -298,6 +298,15 @@ body{
   margin-bottom: 30px;
 }
 
+@media only screen and (min-width: 410px) and (max-width: 450px) {
+
+  .work-item{
+    margin-left: 40px;
+  }
+
+
+}
+
 
 @media only screen and (min-width: 660px) {
 
@@ -533,6 +542,7 @@ body{
 
   .work-content__heading{
     text-align: left;
+    font-size: 45px;
   }
 
   .work-content__text{
@@ -546,6 +556,7 @@ body{
 
   .work-item{
     margin-left: 0;
+    width: 90px;
   }
 }
 
