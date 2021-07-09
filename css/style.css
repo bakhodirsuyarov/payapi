@@ -58,9 +58,6 @@ body{
 }
 
 
-
-
-
 .header-section{
   position: relative;
   z-index: 1;
@@ -718,14 +715,31 @@ body{
     padding: 15px 25px;
   }
 
+
+  /* HERO */
+
+
+
+  .hero-section__email{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    width: 473px;
+    border-radius: 24px;
+  }
+
+
   .hero-section__input{
-    padding: 16px 260px 14px 27px;
+    padding: 16px 103px 14px 27px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0;
   }
 
 
   .hero-section__button{
-    margin-left: -100px;
     padding: 15px 25px;
+    margin: 0;
 
   }
 
@@ -974,9 +988,12 @@ body{
   }
 
 
+  .hero-section__email{
+    width: 471px;
+  }
 
   .hero-section__input{
-    padding: 15px 100px 14px;
+    padding: 15px 100px 14px 27px;
   }
 
 
